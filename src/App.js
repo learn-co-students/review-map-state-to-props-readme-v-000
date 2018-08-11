@@ -33,9 +33,9 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const vanillashake = (state) => {
   debugger;
   return { items: state.items }
 }
 
-export default connect(mapStateToProps)(App);
+export default connect(vanillashake)(App);

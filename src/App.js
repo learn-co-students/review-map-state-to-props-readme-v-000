@@ -16,9 +16,8 @@ class App extends Component {
       type: 'GET_COUNT_OF_USERS',
     });
   }
-
-  render() {
-    // debugger;
+   
+  render() { 
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>

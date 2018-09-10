@@ -18,14 +18,14 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+    debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
-            Click to change items count
+            Click to change items counter
             </button>
           <button onClick={() => this.handleOnClickUsers()}>
-            Click to change user count
+            Click to change user counter
           </button>
           <p>{this.props.items.length}</p>
       </div>

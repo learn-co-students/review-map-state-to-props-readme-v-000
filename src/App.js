@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
@@ -14,7 +15,7 @@ class App extends Component {
   handleOnClickUsers() {
     this.props.store.dispatch({
       type: 'GET_COUNT_OF_USERS',
-    });
+    })
   }
 
   render() {
@@ -27,14 +28,14 @@ class App extends Component {
           <button onClick={() => this.handleOnClickUsers()}>
             Click to change user count
           </button>
-          <p>{this.props.items.length}</p>
+          <p> {this.props.items.length}</p>
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  debugger;
+  // debugger;
   return { items: state.items }
 }
 

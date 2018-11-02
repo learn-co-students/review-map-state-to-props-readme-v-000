@@ -34,8 +34,16 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  debugger;
   return { items: state.items }
 }
 
+// rename variable and argument; function will be called each time the state changes; first argument to that function will be the state of the store
+// const vanilla = (milkshake) => {
+//   debugger;
+//   return { items: milkshake.items }
+// }
+
+
+//shorten w arrow function and pass into connect()
+// export default connect( state => ({ items: state.items }))(App);
 export default connect(mapStateToProps)(App);

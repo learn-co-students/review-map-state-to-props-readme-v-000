@@ -39,3 +39,14 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps)(App);
+//The first argument for connect is always the name of the state of the store
+// EXAMPLE:
+// const vanilla = (milkshake) => {
+//   debugger;
+//   return { items: milkshake.items }
+// }
+//
+// export default connect(vanilla)(App);
+
+//export default connect( state => ({ items: state.items }) )(App); is the same as above
+//Whatever function we pass to connect() is executed each time there is a change in state

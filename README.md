@@ -29,7 +29,7 @@ to items.
 At the bottom of the file, inside the `mapStateToProps()` function you can see
 we placed a debugger. Ok, now that you're a little better situated, let's start
 our exploration.
-
+beep boop
 ## Deeper explanation of mapStateToProps
 
 Remember that we encounter mapStateToProps when using the connect function.   In

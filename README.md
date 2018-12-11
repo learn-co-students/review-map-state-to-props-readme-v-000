@@ -15,7 +15,7 @@ little easier to digest.  If you open up the file `shoppingListItemReducer` the
 first thing you'll see is that we added a new branch to our case statement. Our
 reducer now responds to the action types 'GET_COUNT_OF_ITEMS', and
 'GET_COUNT_OF_USERS'.  We did this to make our state slightly more complex.
-You'll notice at the top of our __shoppingListItemReducer__ that we added a new
+You'll notice at the top of our __shoppingListItemReducernb jkh hbjh__ that we added a new
 key to our initial state called users, and populated it with an initial string
 to represent a user. You can also see that we removed the calls to console.log
 in the reducer, as we already have __Redux Devtools__ setup.  

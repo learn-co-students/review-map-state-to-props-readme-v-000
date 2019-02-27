@@ -7,13 +7,14 @@ import App from './App';
 import './index.css';
 
 const store = createStore(
-  shoppingListItemReducer, 
+  shoppingListItemReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
 ReactDOM.render(
   <Provider store={store}>
     <App store={store}/>
+    <div> changes to be able to submit </div>
   </Provider>,
   document.getElementById('root')
 );

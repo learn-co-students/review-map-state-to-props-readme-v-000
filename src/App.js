@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import './App.css';
 
 
+//goal: we need to get our props. 
 class App extends Component {
 
   handleOnClickItems() {
@@ -18,7 +19,7 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+     debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
@@ -32,9 +33,10 @@ class App extends Component {
     );
   }
 }
-
+// const vanilla = (milkshake) => {
+//   debugger;
+//   return "items: milkshake.items" }
 const mapStateToProps = (state) => {
-  debugger;
   return { items: state.items }
 }
 

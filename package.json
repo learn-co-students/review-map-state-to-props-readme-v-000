@@ -15,5 +15,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "When we last left off, we successfully used our __createStore()__ method, and were able have our application re-render through the rather confusing `connect()` method and __Provider__ component. Whenever something in JavaScript is confusing, it is generally helpful to place some debuggers in the code and poke around. In this lesson we will guide you through that, and giving you a for your eyes only peak at the sordid underworld of `connect()` and `mapStateToProps()`.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichia/review-map-state-to-props-readme-v-000.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichia/review-map-state-to-props-readme-v-000/issues"
+  },
+  "homepage": "https://github.com/nichia/review-map-state-to-props-readme-v-000#readme"
 }

@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+    debugger
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
@@ -37,5 +37,6 @@ const mapStateToProps = (state) => {
   debugger;
   return { items: state.items }
 }
-
+// connect our App component to a slice of the store's state 
+// specified in mapStateToProps().
 export default connect(mapStateToProps)(App);

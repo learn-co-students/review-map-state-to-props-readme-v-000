@@ -1,5 +1,5 @@
 export default function shoppingListItemReducer(state = {
-  items: [], 
+  items: [],
   users: [ 'initial user' ]
 }, action) {
 
@@ -10,6 +10,7 @@ export default function shoppingListItemReducer(state = {
         items: state.items.concat(state.items.length + 1)
       });
 
+    // NEW
     case 'GET_COUNT_OF_USERS':
       return Object.assign({}, state, {
         users: state.users.concat(state.users.length + 1)

@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+    debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
@@ -33,9 +33,10 @@ class App extends Component {
   }
 }
 
+// Because we are taking a part of the store's state and porting it to become props of the relevant component, we say that we are mapping it as props to the component, thus the name mapStateToProps.
 const mapStateToProps = (state) => {
-  debugger;
   return { items: state.items }
 }
 
 export default connect(mapStateToProps)(App);
+//connects App component to a slice of the store's state

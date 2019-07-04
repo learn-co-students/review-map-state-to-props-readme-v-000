@@ -18,24 +18,35 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
             Click to change items count
             </button>
+          <p>{this.props.items.length}</p><br />
+
           <button onClick={() => this.handleOnClickUsers()}>
             Click to change user count
           </button>
-          <p>{this.props.items.length}</p>
+          <p>{this.props.users.length}</p>
       </div>
     );
   }
 }
 
+export default connect( state => ({ items: state.items, users: state.users }))(App);
+
+/*
+
 const mapStateToProps = (state) => {
-  debugger;
-  return { items: state.items }
+  return { orangePeel: ['a', 'b', 'c'] }
 }
 
-export default connect(mapStateToProps)(App);
+const vanilla = (milkshake) => {
+  debugger;
+  return { items: milkshake.items }
+}
+
+export default connect(vanilla)(App);
+
+*/

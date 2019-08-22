@@ -33,9 +33,13 @@ class App extends Component {
   }
 }
 
+/*whatever function we pass to the connect() function will be called each time the state changes, and the first argument to that function, 
+whatever its name, will be the state of the store.*/
 const mapStateToProps = (state) => {
   debugger;
   return { items: state.items }
 }
 
+/*We can even shorten mapStateToProps() down to an anonymous arrow function and pass it directly into connect():
+export default connect( state => ({ items: state.items }) )(App);*/
 export default connect(mapStateToProps)(App);

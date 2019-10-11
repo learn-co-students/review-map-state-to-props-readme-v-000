@@ -9,7 +9,7 @@ class App extends Component {
     this.props.store.dispatch({
       type: 'GET_COUNT_OF_ITEMS',
     });
-  }
+  // } hello
 
   handleOnClickUsers() {
     this.props.store.dispatch({

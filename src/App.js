@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+    debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
@@ -35,7 +35,12 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   debugger;
-  return { items: state.items }
+  return { items: state.itmes }
 }
+  // The connect() function then takes the return
+//   value from the mapStateToProps() function and adds
+//   that return value to the props of the component 
+//   that is passed through in the last parentheses. 
+// }
 
 export default connect(mapStateToProps)(App);

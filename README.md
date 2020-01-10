@@ -8,6 +8,7 @@ code and poke around. In this lesson we will guide you through that, and giving
 you a for your eyes only peak at the sordid underworld of `connect()` and
 `mapStateToProps()`.
 
+
 ## Get situated with the codebase changes
 
 Now, we made some changes to the codebase, mainly to help this walkthrough a

@@ -167,8 +167,8 @@ render() {
 
 If you type in `this.props` while inside the render function, you will see that
 we now have this.props.orangePeel, which returns our array of numbers. So by
-changing the key to the return value in `mapStateToProps()` we changed the name
-of the prop in __App__. As a second step, let's change the value to orangePeel
+changing the key of the return value in `mapStateToProps()` we changed the name
+of the prop in __App__. As a second step, let's change the value of orangePeel
 as well:
 
 ```javascript

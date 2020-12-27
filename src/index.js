@@ -1,19 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-import shoppingListItemReducer from './reducers/shoppingListItemReducer';
-import App from './App';
-import './index.css';
-
-const store = createStore(
-  shoppingListItemReducer, 
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import './App.css';
+ 
+ 
+class App extends Component {
+ 
+  handleOnClickItems() {
+    this.props.dispatch({
+      type: 'GET_COUNT_OF_ITEMS',
+    });
+  }
+ 
+  handleOnClickUsers() {
+    this.props.dispatch({
+      type: 'GET_COUNT_OF_USERS',
+    })
+  }
+ 
+  render() {
+    debugger;
+    return (
+      <div className="App">
+          <button onClick={() => this.handleOnClickItems()}>
+            Click to change items count
+            </button>
+          <button onClick={() => this.handleOnClickUsers()}>
+            Click to change user count
+          </button>
+          <p> {this.props.items.length}</p>
+      </div>
+    );
+  }
+}
+ 
+const mapStateToProps = (state) => {
+  // debugger;
+  return { items: state.items }
+}
+ 
+export default connect(mapStateToProps)(App);

@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    // debugger;
+    debugger;
     return (
       <div className="App">
           <button onClick={() => this.handleOnClickItems()}>
@@ -34,8 +34,22 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  debugger;
-  return { items: state.items }
+  // debugger;
+  return { orangePeel: state.items }
+  // return { items: state.items }
 }
+// the mapStateToProps() method is executed with each change to the store's state.
+// export default connect(mapStateToProps)(App);
+// export default connect( state => ({ items: state.items }) )(App);
+export default connect( state => ({ orangePeel: state.items}) )(App);
 
-export default connect(mapStateToProps)(App);
+
+
+//even doing this works just like before, so we can call the function anything, 
+//and the state passed into the function anything
+// const vanilla = (milkshake) => {
+//   debugger;
+//   return { items: milkshake.items }
+// }
+ 
+// export default connect(vanilla)(App);

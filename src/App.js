@@ -12,6 +12,8 @@ class App extends Component {
   }
 
   handleOnClickUsers() {
+    // const face = "idk"
+    // debugger
     this.props.dispatch({
       type: 'GET_COUNT_OF_USERS',
     });
